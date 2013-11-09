@@ -14,7 +14,8 @@
 		<br>
 		<span><?php echo $value->name; ?></span>
 <?php } ?>
-
+        <br/>
+<?php print_r($q->response); ?>
     </div><!--.module_cont -->
     <div class="clear"><!-- ClearFIX --></div>
 </div>
