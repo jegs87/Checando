@@ -31,68 +31,12 @@
     <?php echo $css; ?>
     <!-- Favicons -->
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
-    <script type="text/javascript" src="js/sorting.js"></script>
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <script type="text/javascript" src="js/jquery.countdownN.js"></script>
-    <script type="text/javascript">
 
-        $(function(){
-
-
-            function funcionDias(){
-                // var future = new Date("Sep 20 2014 21:15:00 GMT+0200");
-                var future = new Date(2014,2,26);
-                var now = new Date();
-                var difference = Math.floor((future.getTime() - now.getTime()) / 1000);
-                var seconds = fixIntegers(difference % 60);
-                difference = Math.floor(difference / 60);
-                var minutes = fixIntegers(difference % 60);
-                difference = Math.floor(difference / 60);
-                var hours = fixIntegers(difference % 24);
-                difference = Math.floor(difference / 24);
-                var days = difference;
-                var string = days + ":" + hours +':' + minutes + ':' + seconds;
-                return string;
-            }
-            function fixIntegers(integer)
-            {
-                if (integer < 0)
-                    integer = 0;
-                if (integer < 10)
-                    return "0" + integer;
-                return "" + integer;
-            }
-            var fechaInicial = funcionDias();
-            $('#counter').countdown({
-                format: "dd:hh:mm:ss",
-                stepTime: 60,
-                image: 'img/digits.png',
-                startTime: fechaInicial //dias+':12:12:00'
-            });
-        });
-    </script>
     <?php echo $fjs; ?>
-    <style type="text/css">
-        br { clear: both; }
-        .cntSeparator {
-            font-size: 54px;
-            margin: 10px 7px;
-            color: #000;
-        }
-        .desc { margin: 7px 3px; }
-        .desc div {
-            float: left;
-            font-family: Arial;
-            width: 70px;
-            margin-right: 65px;
-            font-size: 13px;
-            font-weight: bold;
-            color: #000;
-        }
-    </style>
+
 </head>
 <body>
     <!--[if lt IE 7]>
