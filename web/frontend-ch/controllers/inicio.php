@@ -6,10 +6,10 @@ class inicio extends MX_Controller {
         /* Parametros SEO */
         $this->meta_description ='';
         $this->meta_keywords    = '';
-        $this->meta_robots  ='index,follow';$this->meta_rating ='GENERAL'; $this->meta_distribution  ='GLOBAL'; $this->meta_copyright ='COPA CHAMPAGNAT'; $this->meta_author = 'NAVEGANTE';
+        $this->meta_robots  ='index,follow';$this->meta_rating ='GENERAL'; $this->meta_distribution  ='GLOBAL'; $this->meta_copyright ='Demo'; $this->meta_author = 'autor';
         $this->metatags ='<meta name="description" content="'.$this->meta_description.'" /><meta name="keywords" content="'.$this->meta_keywords.'" /> <meta name="robots" content="'.$this->meta_robots.'" /> <meta name="rating" content="'.$this->meta_rating.'" /> <meta name="distribution" content="'.$this->meta_distribution.'" /> <meta name="copyright" content="'.$this->meta_copyright.'" /> <meta name="author" content="'.$this->meta_author.'" /> ';
         $this->data['meta_tags'] = $this->metatags;
-        $this->data['titulo'] = 'Copa Champagnat 2014';
+        $this->data['titulo'] = '';
         $this->mainView = 'inicio';
         $this->data['fjs'] = '';
         $this->data['js'] = '';
