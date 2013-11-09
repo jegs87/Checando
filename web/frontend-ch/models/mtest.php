@@ -4,7 +4,8 @@
         public function __construct()
         {
             parent :: __construct();
-            $this->table_principal = "test";
+            $this->table = "test";
+            
 
         }
 
