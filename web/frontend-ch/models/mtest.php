@@ -5,7 +5,7 @@
         {
             parent :: __construct();
             $this->table = "test";
-            
+
 
         }
 

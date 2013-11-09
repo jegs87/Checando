@@ -388,8 +388,8 @@ class MY_Model extends CI_Model
     }	
 	
 	function insertar($data){
-		$data['created'] = date("Y-m-d H:i:s");
-		$data['updated'] = date("Y-m-d H:i:s");
+		// $data['created'] = date("Y-m-d H:i:s");
+		// $data['updated'] = date("Y-m-d H:i:s");
 	   if($this->db->insert($this->table, $data)){
 		 $inserted   = $this->db->insert_id();
 	   }
@@ -397,7 +397,7 @@ class MY_Model extends CI_Model
 	}
 
 	function actualizar($data,$id){ 
-	  $data['updated'] = date("Y-m-d H:i:s");
+	  // $data['updated'] = date("Y-m-d H:i:s");
 	  $this->db->update($this->table, $data, array('id' => $id));
 	  return true;      
 	}
