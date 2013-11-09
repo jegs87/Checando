@@ -8,7 +8,12 @@
 <div class="contentarea">
 <div class="row-fluid">
     <div class="span12 ">
-
+    <?php 
+	foreach ($q->response as $key => $value) { ?>
+		<span><?php echo $value->id; ?></span>
+		<br>
+		<span><?php echo $value->name; ?></span>
+<?php } ?>
 
     </div><!--.module_cont -->
     <div class="clear"><!-- ClearFIX --></div>
