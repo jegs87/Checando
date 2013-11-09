@@ -27,9 +27,9 @@ class inicio extends MX_Controller {
     public function index(){
         $datos = json_decode(file_get_contents("https://api.foursquare.com/v2/venues/4b6622d2f964a520af152be3?client_id=FPD2H4NAKX3ABYPEGR2LAMSWV41HC3GSWAEDOCVR00ZDS3LL&client_secret=FCV2G2P3MXZQE2HQYCLHPTMFR03ARE4MWLM34KOX4MXIKCX4&v=20130114"));
         foreach ($datos->response as $key => $value) {
-            $datos['venueId'] = $value->id;
+            $cdatos['venueId'] = $value->id;
             //$value->name;
-            $this->mtest->insertar($datos);
+            $this->mtest->insertar($cdatos);
         }
 
         $data['q'] = $datos;
